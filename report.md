@@ -26,6 +26,11 @@ The actor is updated by backpropagating the error that is evaluated by calculati
 actor_loss = -self.critic_local(states, actions_pred).mean()
 ```
 
+### Networks 
+
+Both the actor and critic networks are very simple feed forward networks with 2 hidden layers with ReLu activations of size 400 and 300 respectively. 
+Since the critic outputs a Q-value, it does not have an activation function in the final layer. Compared to that, the actor uses a tanh function at the output to output a continious action in the range of [-1,1] for each of the 4 actions (torque that is sent to each joint). 
+
 ## Hyperparameters 
 
 ```python 
@@ -47,8 +52,8 @@ sigma = 0.2
 
 ## Possible Improvements 
 
-- [GAE](https://arxiv.org/abs/1506.02438) : 
-- [Q-PROP](https://arxiv.org/abs/1611.02247):
+- [GAE](https://arxiv.org/abs/1506.02438) : combats the bias/variance tradeoff of TD estimates by introducing a hyperparameter lambda that allow to combine monte-carlo and TD estimates
+- [Q-PROP](https://arxiv.org/abs/1611.02247): uses a Taylor Expansion to control the bias/variance tradeoff in off-policy methods 
 - The batch algorithms TNPG and TRPO (TRPO enables faster learning through larger batch sizes) as suggested by the paper [Benchmarking Deep Reinforcement Learning for Continuous Control](https://arxiv.org/abs/1604.06778)
 - Recurrent versions of the used method as suggested by [Benchmarking Deep Reinforcement Learning for Continuous Control](https://arxiv.org/abs/1604.06778), but that may make it more difficult to train 
 

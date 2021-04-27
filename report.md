@@ -13,11 +13,18 @@ DDPG also uses experience replay to stabilize the training process, in the case 
 ### Loss  
 
 The critic loss is analogous to a DQN loss and is simply the mean squared error between the targets of the current state (calculated by the target network) and the 
-output of the local network. 
+output of the local network : 
+
+```python 
+critic_loss = F.mse_loss(Q_expected, Q_targets)
+```
+
 
 The actor is updated by backpropagating the error that is evaluated by calculating the average of q-values for each state/action pair as output by the critic network. 
 
-
+```python 
+actor_loss = -self.critic_local(states, actions_pred).mean()
+```
 
 ## Hyperparameters 
 

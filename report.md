@@ -8,11 +8,15 @@ exploration, Ornstein-Uhlenbeck noise is added to the action.
 The actor is implemented as a target network, due to target networks decorrelating the process and generally improving performance. Soft updates are used in DDPG, which means 
 that at every update step, the local networks are updated by a certain amount of the weights of the target networks according to a hyperparameter TAU (see below). 
 
-### Loss Function 
+DDPG also uses experience replay to stabilize the training process, in the case of multi agents every single agent has its own replay buffer that only the agent can read from and write to. 
 
-### General 
+### Loss  
 
-### Loss
+The critic loss is analogous to a DQN loss and is simply the mean squared error between the targets of the current state (calculated by the target network) and the 
+output of the local network. 
+
+The actor is updated by backpropagating the error that is evaluated by calculating the average of q-values for each state/action pair as output by the critic network. 
+
 
 
 ## Hyperparameters 

@@ -37,10 +37,17 @@ To set up your python environment to run the code in this repository, follow the
 
 ## Unity Framework 
 
-Select the file that corresponds to your operating system (see bewlo).  
+Select the file that corresponds to your operating system (see bewow).  
 Then place the file in the DRLND GitHub repository, in the p1_navigation/ folder, and unzip (or decompress) the file.
 
-[Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)     
+1 Agent Version : 
+
+- [Linux](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
+- [MacOS](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip) 
+- Windows 
+
+
+Then, place the file in the p2_continuous-control/ folder in the DRLND GitHub repository, and unzip (or decompress) the file.
 
 [Mac OSX](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip) 
 

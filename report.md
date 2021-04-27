@@ -46,3 +46,9 @@ sigma = 0.2
 ```
 
 ## Possible Improvements 
+
+- [GAE](https://arxiv.org/abs/1506.02438) : 
+- [Q-PROP](https://arxiv.org/abs/1611.02247):
+- The batch algorithms TNPG and TRPO (TRPO enables faster learning through larger batch sizes) as suggested by the paper [Benchmarking Deep Reinforcement Learning for Continuous Control](https://arxiv.org/abs/1604.06778)
+- Recurrent versions of the used method as suggested by [Benchmarking Deep Reinforcement Learning for Continuous Control](https://arxiv.org/abs/1604.06778), but that may make it more difficult to train 
+

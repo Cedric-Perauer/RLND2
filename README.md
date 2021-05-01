@@ -5,6 +5,10 @@
 
 We are working with the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment. In this environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of the agent is to maintain its position at the target location for as many time steps as possible.The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1. 
 
+## Credits 
+
+The ddpg code is adapted to the reacher task as used in the OpenAI pendulum exercise of the Nanodegree and provided in this [Subfolder](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-pendulum) of their Deep RL repo. 
+
 Two simulations are provided for the enviornment : 
 1) single agent enviornment 
 2) twenty identical agents

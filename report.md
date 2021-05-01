@@ -50,6 +50,14 @@ theta = 0.15
 sigma = 0.2
 ```
 
+
+## Results
+
+The Algorithm achieves an average reward of at least over the last 100 episodes over all agents in episode 121 in the multi agent enviornment.
+A plot of this is provided below. 
+
+![image](result.png)
+
 ## Possible Improvements 
 
 - [GAE](https://arxiv.org/abs/1506.02438) : combats the bias/variance tradeoff of TD estimates by introducing a hyperparameter lambda that allow to combine monte-carlo and TD estimates

@@ -53,10 +53,10 @@ sigma = 0.2
 
 ## Results
 
-The Algorithm achieves an average reward of at least over the last 100 episodes over all agents in episode 121 in the multi agent enviornment.
-A plot of this is provided below. 
+The Algorithm achieves the required average reward of at least 30 over the last 100 episodes over all agents in episode 121 when trained on the multi agent enviornment.
+A plot of the reward over the episodes is provided below. 
 
-![image](result.png)
+<img src="result.png" alt="drawing" width="600"/>
 
 ## Possible Improvements 
 
